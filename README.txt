@@ -1,8 +1,6 @@
 BTZ-derived curved Harper package
 
 Contents
-- AdS3_hofstadter.tex: manuscript source.
-- ref.bib: bibliography for the manuscript.
 - btz_curved_hofstadter.py: numerical analysis script for the BTZ-derived effective lattice model.
 - run_btz_curved_hofstadter.ipynb: notebook interface for reproducing the analysis.
 - btz_curved_hofstadter_metrics.csv: table of scan diagnostics.
@@ -15,7 +13,6 @@ Contents
 - btz_annulus_heatmaps.png
 - btz_full_heatmaps.png
 - btz_robustness.png
-- jheppub.sty, JHEP.bst
 
 Python requirements
 - numpy
@@ -30,7 +27,3 @@ from the project directory to regenerate the numerical outputs in the current wo
 
 Notebook usage
 Open run_btz_curved_hofstadter.ipynb and edit the CONFIG cell to change lattice sizes, parameter grids, or plotting options.
-
-Notes
-- The plotting code uses external TeX rendering when available and otherwise falls back to matplotlib mathtext.
-- Generated files are written to the working directory unless a different output directory is specified.
