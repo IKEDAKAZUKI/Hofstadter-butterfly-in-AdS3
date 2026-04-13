@@ -1,0 +1,275 @@
+{
+  "config_used": {
+    "common": {
+      "Nx": 48,
+      "Nphi": 48,
+      "ax": 0.1,
+      "alpha_min": 0.0,
+      "alpha_max": 1.0,
+      "Nalpha": 141,
+      "nu": 0.0,
+      "q": 1.0
+    },
+    "sweep": {
+      "L_grid": [
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        20.0
+      ],
+      "rh_grid": [
+        0.3,
+        0.6,
+        1.0,
+        1.5,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "x0_annulus": 2.0,
+      "x0_full": 0.0
+    },
+    "diagnostics": {
+      "n_mid": 4,
+      "zero_dos_window_fraction": 0.05,
+      "box_counting_grids": [
+        32,
+        48,
+        64,
+        96,
+        128
+      ],
+      "horizon_cutoff_x": 1.0,
+      "ldos_energy_bins": 140,
+      "ldos_sigma_fraction": 0.03,
+      "alpha_ref_flux_response": 0.5,
+      "flux_response_delta_alpha": 0.01,
+      "flux_response_energy_window_fraction": 0.4,
+      "ab_alpha_ref": 0.5,
+      "ab_Nphi_scan": 81,
+      "ab_n_levels_show": 14,
+      "stiffness_delta_phi": 0.16,
+      "robust_case": {
+        "L": 12.0,
+        "r_h": 2.0,
+        "x0": 0.0
+      },
+      "robust_Nx_grid": [
+        24,
+        32,
+        40,
+        48,
+        56
+      ],
+      "robust_Nalpha_grid": [
+        41,
+        61,
+        81,
+        101,
+        141
+      ],
+      "robust_xmax_fixed": 4.8,
+      "robust_x0_grid": [
+        0.0,
+        1.0,
+        2.0
+      ]
+    },
+    "plots": {
+      "use_tex": "auto",
+      "tex_preamble": "\\usepackage{amsmath}\\usepackage{amssymb}",
+      "mathtext_fontset": "cm",
+      "figure_dpi": 240,
+      "spectra_marker_size": 0.08,
+      "scatter_alpha": 1.0,
+      "scatter_marker_size": 12,
+      "ab_level_cmap": "coolwarm",
+      "annotate_heatmaps": false,
+      "state_cases": [
+        {
+          "title": "weak curvature annulus",
+          "L": 20.0,
+          "r_h": 1.0,
+          "x0": 2.0
+        },
+        {
+          "title": "strong curvature annulus",
+          "L": 8.0,
+          "r_h": 1.0,
+          "x0": 2.0
+        },
+        {
+          "title": "small horizon full exterior",
+          "L": 12.0,
+          "r_h": 1.0,
+          "x0": 0.0
+        },
+        {
+          "title": "large horizon full exterior",
+          "L": 12.0,
+          "r_h": 4.0,
+          "x0": 0.0
+        }
+      ],
+      "ldos_cases": [
+        {
+          "title": "small horizon",
+          "L": 12.0,
+          "r_h": 1.0,
+          "x0": 0.0
+        },
+        {
+          "title": "large horizon",
+          "L": 12.0,
+          "r_h": 4.0,
+          "x0": 0.0
+        }
+      ],
+      "flux_scatter_cases": [
+        {
+          "title": "small horizon",
+          "L": 12.0,
+          "r_h": 1.0,
+          "x0": 0.0
+        },
+        {
+          "title": "large horizon",
+          "L": 12.0,
+          "r_h": 4.0,
+          "x0": 0.0
+        }
+      ],
+      "ab_cases": [
+        {
+          "title": "small horizon",
+          "L": 12.0,
+          "r_h": 1.0,
+          "x0": 0.0
+        },
+        {
+          "title": "large horizon",
+          "L": 12.0,
+          "r_h": 4.0,
+          "x0": 0.0
+        }
+      ]
+    },
+    "output_names": {
+      "metrics_csv": "btz_curved_hofstadter_metrics.csv",
+      "summary_json": "btz_curved_hofstadter_summary.json",
+      "config_json": "btz_curved_hofstadter_config_used.json",
+      "state_spectra_png": "btz_state_colored_spectra.png",
+      "ldos_png": "btz_ldos_maps.png",
+      "flux_scatter_png": "btz_flux_radius_scatter.png",
+      "ab_response_png": "btz_ab_response.png",
+      "annulus_heatmaps_png": "btz_annulus_heatmaps.png",
+      "full_heatmaps_png": "btz_full_heatmaps.png",
+      "robustness_png": "btz_robustness.png"
+    }
+  },
+  "annulus_fixed_rh_1": [
+    {
+      "L": 8.0,
+      "D_box": 1.857773524026757,
+      "flux_sensitivity": 0.0089056580017693,
+      "rho_zero": 0.0853610224139591,
+      "charge_stiffness": 0.0002178171364668
+    },
+    {
+      "L": 10.0,
+      "D_box": 1.8780481581590096,
+      "flux_sensitivity": 0.0111658438462666,
+      "rho_zero": 0.1337543582326465,
+      "charge_stiffness": 0.0005281204742722
+    },
+    {
+      "L": 12.0,
+      "D_box": 1.9004826087165587,
+      "flux_sensitivity": 0.0134852241320731,
+      "rho_zero": 0.1896523324924434,
+      "charge_stiffness": 0.0009905007364132
+    },
+    {
+      "L": 14.0,
+      "D_box": 1.8981632116684963,
+      "flux_sensitivity": 0.015874375896584,
+      "rho_zero": 0.2512786055900734,
+      "charge_stiffness": 0.0016025848671592
+    },
+    {
+      "L": 16.0,
+      "D_box": 1.910783151662276,
+      "flux_sensitivity": 0.0182919579318336,
+      "rho_zero": 0.3187888171982291,
+      "charge_stiffness": 0.0023605981361794
+    },
+    {
+      "L": 18.0,
+      "D_box": 1.9325439016362005,
+      "flux_sensitivity": 0.0207009710830586,
+      "rho_zero": 0.3868280856621745,
+      "charge_stiffness": 0.0032606807130807
+    },
+    {
+      "L": 20.0,
+      "D_box": 1.9280555102010912,
+      "flux_sensitivity": 0.0230423065277178,
+      "rho_zero": 0.4604107836450199,
+      "charge_stiffness": 0.0042988954906637
+    }
+  ],
+  "full_fixed_L_12": [
+    {
+      "r_h": 0.3,
+      "flux_sensitivity": 0.0206329290449001,
+      "avg_horizon_weight_mid": 0.3181921838082283,
+      "rho_zero": 0.3296870329285675,
+      "charge_stiffness": 0.0785910843683255
+    },
+    {
+      "r_h": 0.6,
+      "flux_sensitivity": 0.0203498404827645,
+      "avg_horizon_weight_mid": 0.4260028926848375,
+      "rho_zero": 0.4082885612154596,
+      "charge_stiffness": 0.0330127384795275
+    },
+    {
+      "r_h": 1.0,
+      "flux_sensitivity": 0.0197511008252994,
+      "avg_horizon_weight_mid": 0.4989829834178687,
+      "rho_zero": 0.4948732550736272,
+      "charge_stiffness": 0.014421639480878
+    },
+    {
+      "r_h": 1.5,
+      "flux_sensitivity": 0.0186894000811236,
+      "avg_horizon_weight_mid": 0.5572565210252938,
+      "rho_zero": 0.5765813683314541,
+      "charge_stiffness": 0.0066369356992518
+    },
+    {
+      "r_h": 2.0,
+      "flux_sensitivity": 0.0173204245453552,
+      "avg_horizon_weight_mid": 0.5947789440058421,
+      "rho_zero": 0.6712250181851409,
+      "charge_stiffness": 0.0034425028196539
+    },
+    {
+      "r_h": 3.0,
+      "flux_sensitivity": 0.0138676096104372,
+      "avg_horizon_weight_mid": 0.6775633238732927,
+      "rho_zero": 0.6943620554821835,
+      "charge_stiffness": 0.001039396966257
+    },
+    {
+      "r_h": 4.0,
+      "flux_sensitivity": 0.0104956919575669,
+      "avg_horizon_weight_mid": 0.7035003020276203,
+      "rho_zero": 0.5739604753662132,
+      "charge_stiffness": 0.0003094452728869
+    }
+  ]
+}
