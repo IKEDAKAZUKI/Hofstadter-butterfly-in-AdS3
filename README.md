@@ -251,8 +251,8 @@ If you use this code or data in academic work, please cite:
 
 ```bibtex
 @article{Ikeda:2020guk,
-    author = "Ikeda, Kazuki and Oz, Yaron",
-    title = "{Hofstadter{\textquoteright}s butterfly in AdS$_{3}$ black holes}",
+    author = {{Ikeda}, Kazuki and {Oz}, Yaron},
+    title = "{Hofstadter's Butterfly in AdS$_3$ Black Holes}",
     eprint = "2604.14335",
     archivePrefix = "arXiv",
     primaryClass = "hep-th",
