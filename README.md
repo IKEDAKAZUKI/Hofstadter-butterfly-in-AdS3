@@ -281,6 +281,12 @@ Copyright (c) 2026 Kazuki Ikeda.
 
 ---
 
+## Funding
+
+The work of KI was supported by the U.S. Department of Energy, Office of Science, under Contract No. DE-SC0026415 and in part by the NSF under Grant No. OSI-2328774, in particular, on the connection between quantum fundamentals and quantum systems. The work of YO was supported by the Israeli Science Foundation Excellence Center, the US-Israel Binational Science Foundation, and the Israel Ministry of Science.
+
+---
+
 <div align="center">
 
 **Hofstadter Butterfly · BTZ Geometry · AdS<sub>3</sub> Black Holes · Curved Harper Model**
